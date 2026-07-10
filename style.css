@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+html {
+  font-family: Outfit;
+  background-color: #1741c4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1100px;
+  margin-bottom: 220px;
+}
+
+header h3 {
+  color: white;
+  font-weight: bold;
+}
+
+header p {
+  display: flex;
+  gap: 3px;
+  background-color: #7664ff;
+  border-radius: 100px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.nenhum.fechado {
+  display: none;
+}
+
+.nenhum {
+  display: grid;
+  color: white;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nenhum h2 {
+  margin-top: 200px;
+}
+
+.nenhum h5 {
+  margin-top: 0px;
+}
+
+.butoes {
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.adicionarItem {
+  border: none;
+  color: #1741c4;
+  background-color: #ffd426;
+  width: 140px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px #ffd426;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.editar {
+  border: none;
+  color: #ffffff;
+  background-color: #64ad36;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.minimenu {
+  display: flex;
+  gap: 230px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.sair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.modal-adicionar {
+  background-color: white;
+  width: 450px;
+  height: 280px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.fundo.aberto {
+  display: flex;
+}
+
+.fundoLista.aberto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundoLista {
+  display: none;
+}
+
+.fundo {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.adicionarMenu {
+  position: fixed;
+  left: 38.3%;
+  top: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+.formularioAdicionar {
+  display: grid;
+  gap: 4px;
+}
+
+.formularioAdicionar label {
+  font-size: 9.8px;
+  color: #9999b0;
+  font-weight: bold;
+}
+
+.formularioAdicionar input {
+  height: 39px;
+  border-radius: 7px;
+  border: none;
+  color: gray;
+  background-color: rgb(244, 244, 244);
+}
+
+.botoes-adicionar {
+  display: flex;
+  justify-content: left;
+  margin-top: 23px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cancelar {
+  cursor: pointer;
+  border: none;
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #f0f0f6;
+  color: #777777;
+  font-weight: bold;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.adicionar {
+  cursor: pointer;
+  border: none;
+  width: 230px;
+  border-radius: 8px;
+  color: white;
+  background-color: #1741c4;
+  font-weight: bold;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.quantidadeProduto {
+  color: white;
+  background-color: #7664ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 24px;
+  border-radius: 80px;
+  margin-left: 18px;
+}
+
+.nomeProduto {
+  color: white;
+  margin-left: 10px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  background-color: #64ad36;
+  width: 630px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.linha::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: rgb(255, 217, 0);
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+.lista {
+  display: grid;
+  gap: 10px;
+}
+
+.fundoEdicoes.fechado {
+  display: flex;
+}
+
+.fundoEdicoes {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.edicoes {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f6;
+  width: 410px;
+  height: 200px;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+  right: 41.5%;
+  top: 31%;
+}
+
+.concluir {
+  margin-top: 50px;
+  border: none;
+  background-color: #1741c4;
+  color: white;
+  padding: 10px 160px 10px 160px;
+  border-radius: 8px;
+}

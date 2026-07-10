@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h3>Lista de Compras</h3>
+      <div>
+        <p><span class="quantidade">0</span> itens</p>
+      </div>
+    </header>
+    <main>
+      <div class="nenhum">
+        <img src="" />
+        <h2>Nenhum item na lista ainda</h2>
+        <h5>Toque em "+ Adicionar item" para começar</h5>
+      </div>
+
+      <!--  #-------------------------------------------------------------------- -->
+      <div class="fundo">
+        <div class="adicionarMenu">
+          <div class="modal-adicionar">
+            <div class="minimenu">
+              <h3>Adicionar item</h3>
+              <button class="sair">✕</button>
+            </div>
+            <div class="formularioAdicionar">
+              <label>NOME DO ITEM</label>
+              <br />
+              <input id="nome" type="text" placeholder="Ex: Leite integral" />
+              <br />
+              <label>QUANTIDADE (OPCIONAL)</label>
+              <br />
+
+              <input
+                id="valor"
+                type="text"
+                placeholder="Ex: 2 unidades, 500g..."
+              />
+              <div class="botoes-adicionar">
+                <button class="cancelar">Cancelar</button>
+                <button class="adicionar">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #---------------------------------------------------------------------->
+
+      <div class="fundoLista">
+            <ul class="lista">
+            </ul>
+        </div>
+      </div>
+
+      <!--#---------------------------------------------------------------------->
+      <div class="fundoEdicoes">
+      <div class="edicoes">
+        <div class="minimenu">
+          <h3>Editar lista</h3>
+          <button class="sair">X</button>
+        </div>
+        <ul class="listaEditavel">
+            
+        </ul>
+        <button class="concluir">Concluir</button>
+      </div>
+      </div>
+    </main>
+    <section class="butoes">
+      <button class="adicionarItem">+ Adicionar Item</button>
+      <button class="editar">Editar lista</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
