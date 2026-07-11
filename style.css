@@ -128,8 +128,10 @@ header p {
 
 .modal-adicionar {
   background-color: white;
+  width: 100%;
+  height: 100%;
   width: 450px;
-  height: 280px;
+  height: 340px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -165,6 +167,7 @@ header p {
   position: fixed;
   left: 38.3%;
   top: 8%;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -283,11 +286,11 @@ header p {
 }
 
 .fundoEdicoes.fechado {
-  display: flex;
+  display: none;
 }
 
 .fundoEdicoes {
-  display: none;
+  display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   width: 100vw;
@@ -302,8 +305,10 @@ header p {
   display: flex;
   flex-direction: column;
   background-color: #f0f0f6;
+  width: 100%;
+  height: 100%;
   width: 410px;
-  height: 200px;
+  height: 230px;
   border-radius: 12px;
   align-items: center;
   text-align: center;
@@ -312,10 +317,49 @@ header p {
 }
 
 .concluir {
-  margin-top: 50px;
+  display: flex;
+  margin-top: 120px;
   border: none;
   background-color: #1741c4;
   color: white;
   padding: 10px 160px 10px 160px;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.concluir:hover {
+  background-color: #5a83ff;
+}
+
+.list-edit {
+  align-items: start;
+  justify-content: flex-start;
+  text-align: left;
+  border-radius: 6px;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+}
+
+.line-edit {
+  list-style: none;
+  background-color: #64ad36;
+  display: flex;
+  gap: 10pxpx;
+  flex-direction: row;
+  padding: 8px 0px 8px 8px;
+}
+
+.btn-edit {
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-color: red;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 330px;
+}
+
+.btn-edit:hover {
+  background-color: rgb(255, 120, 120);
 }
