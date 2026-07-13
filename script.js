@@ -52,8 +52,14 @@ function criarListaEditavel(produtos) {
     let botaoEditavel = document.createElement("button");
     botaoEditavel.classList.add("btn-edit");
     botaoEditavel.innerText = "X";
+    let editName = document.createElement("p");
+    editName.classList.add("line-name");
+    editName.textContent = product.nome;
+    let editNumero = document.createElement("p");
+    editNumero.classList.add("line-number");
+    editNumero.textContent = product.numero;
 
-    li.append(product.nome, product.numero, botaoEditavel);
+    li.append(editName, editNumero, botaoEditavel);
     botaoEditavel.addEventListener("click", () => {
       produtos.splice(indice, 1);
       criarListaEditavel(produtos);
@@ -68,13 +74,8 @@ function listExibition() {
     menuInicial.classList.add("fechado");
     lista.classList.add("aberto");
   } else {
-    if (
-      menuInicial.classList.contains("fechado") &&
-      lista.classList.contains("aberto")
-    ) {
-      menuInicial.classList.remove("fechado");
-      lista.classList.remove("aberto");
-    }
+    menuInicial.classList.remove("fechado");
+    lista.classList.remove("aberto");
   }
 }
 
