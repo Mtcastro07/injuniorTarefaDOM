@@ -11,7 +11,7 @@ header {
   text-align: center;
   justify-content: space-between;
   margin-bottom: 220px;
-  padding: 0px 300px 0px 300px;
+  padding: 0px 250px 40px 250px;
 }
 
 header h3 {
@@ -43,10 +43,6 @@ header p {
   text-align: center;
 }
 
-.nenhum h2 {
-  margin-top: 200px;
-}
-
 .nenhum h5 {
   margin-top: 0px;
 }
@@ -64,8 +60,8 @@ header p {
   border: none;
   color: #1741c4;
   background-color: #ffd426;
-  width: 140px;
-  height: 30px;
+  width: 180px;
+  height: 40px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
@@ -85,11 +81,15 @@ header p {
 }
 
 .editar {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
   border: none;
   color: #ffffff;
   background-color: #64ad36;
-  width: 100px;
-  height: 30px;
+  width: 160px;
+  height: 40px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
@@ -111,7 +111,9 @@ header p {
   display: flex;
   gap: 230px;
   align-items: center;
-  margin-bottom: 0px;
+  margin-top: -40px;
+  margin-bottom: -60px;
+  font-size: 20px;
 }
 
 .sair {
@@ -130,8 +132,8 @@ header p {
   background-color: white;
   width: 100%;
   height: 100%;
-  width: 450px;
-  height: 340px;
+  width: 480px;
+  height: 350px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -155,19 +157,17 @@ header p {
 .fundo {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   position: fixed;
+  justify-content: center;
+  align-items: center;
 }
 
 .adicionarMenu {
-  position: fixed;
-  left: 38.3%;
-  top: 8%;
-  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -184,7 +184,21 @@ header p {
 }
 
 .formularioAdicionar input {
-  height: 39px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
   border-radius: 7px;
   border: none;
   color: gray;
@@ -197,14 +211,14 @@ header p {
   justify-content: left;
   margin-top: 23px;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .cancelar {
   cursor: pointer;
   border: none;
-  width: 150px;
-  height: 35px;
+  width: 174px;
+  height: 50px;
   border-radius: 8px;
   background-color: #f0f0f6;
   color: #777777;
@@ -293,38 +307,41 @@ header p {
 .fundoEdicoes {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+  justify-content: center;
+  align-items: center;
   position: fixed;
+}
+.edicoes .minimenu {
+  padding: 0px;
+  margin: 0px;
+  gap: 252px;
 }
 
 .edicoes {
-  position: fixed;
   display: flex;
   flex-direction: column;
   background-color: #f0f0f6;
   width: 100%;
   height: auto;
-  max-width: 410px;
-  min-height: 280px;
+  max-width: 450px;
+  min-height: 190px;
   border-radius: 12px;
   align-items: center;
   text-align: center;
-  right: 41.5%;
-  top: 31%;
 }
 
 .concluir {
   display: flex;
-  margin-top: 120px;
+  margin-top: 50px;
   border: none;
   background-color: #1741c4;
   color: white;
   padding: 10px 160px 10px 160px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -350,7 +367,7 @@ header p {
 
 .line-number {
   position: absolute;
-  right: 70px;
+  right: 450px;
   background-color: rgb(214, 214, 214);
   padding: 0px 10px 0px 10px;
   border-radius: 10px;
@@ -368,16 +385,23 @@ header p {
 }
 
 .btn-edit {
-  border-radius: 100px;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
   border: none;
   color: white;
   background-color: red;
   position: absolute;
   cursor: pointer;
-  margin-top: 16px;
-  margin-left: 330px;
+  margin-top: 13px;
+  margin-left: 375px;
 }
 
 .btn-edit:hover {
   background-color: rgb(255, 120, 120);
+}
+
+.editar svg {
+  width: 21px;
+  height: 21px;
 }
