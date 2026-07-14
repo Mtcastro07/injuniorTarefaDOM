@@ -82,6 +82,7 @@ function listExibition() {
 addButton.addEventListener("click", () => {
   menuInicial.classList.add("fechado");
   addItem.classList.add("aberto");
+  listExibition();
 });
 
 fecharAdicionar.addEventListener("click", () => {
@@ -97,13 +98,7 @@ fecharEditar.addEventListener("click", () => {
 });
 
 cancelar.addEventListener("click", () => {
-  if (
-    menuInicial.classList.contains("fechado") ||
-    addItem.classList.contains("aberto")
-  ) {
-    menuInicial.classList.remove("fechado");
-    addItem.classList.remove("aberto");
-  }
+  addItem.classList.remove("aberto");
 });
 
 adicionar.addEventListener("click", () => {
